@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+<div class="title">
+	<img class="logo" src="image/logo.png" alt="">
+	<h1>Конвертер валют</h1>
+</div>
+<div class="data">
+	<select class="type" >
+		<option value="nul">Нал.</option>
+		<option value="Beznul">Безнал.</option>
+	</select>
+	<h2 class="date">28.04.2020</h2>
+</div>
+<div class="content">
+<div class="change">
+	<h3>меняю</h3>
+	<div class="changeLine">
+	<input class="changeInput" type="text" placeholder="0.00">
+	<select class="changeCurr">
+		<option value="USD">USD</option>
+		<option value="EUR">EUR</option>
+		<option value="UAH">UAH</option>
+	</select>
+</div>
+</div>
+<div class="result">
+	<button class="resultBtn" type="button">=</button>
+	<button class="resultSelect" type="button"></button>
+</div>
+<div class="find">
+	<h3>получаю</h3>
+	<div class="findLine">
+	<input class="findInput" type="text" placeholder="0.00" disabled>
+	<select class="findCurr">
+		<option value="USD">USD</option>
+		<option value="EUR">EUR</option>
+		<option value="UAH">UAH</option>
+	</select>
+</div>
+</div>
+</div>
+</div>
+
+   <script src="main.js"></script>
+	<script>
+		let obj = {
+			type: '.type',
+			date: '.date',
+			changeInput: '.changeInput',
+			changeCurr: '.changeCurr',
+			resultBtn: '.resultBtn',
+			resultSelect: '.resultSelect',
+			findInput: '.findInput',
+			findCurr: '.findCurr'
+		}
+		let kurs = new Converter(obj);
+		kurs.init();
+	</script>
+</body>
+
+</html>

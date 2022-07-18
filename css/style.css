@@ -1,0 +1,117 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap);
+*, *:before, *:after {
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 350px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	background-color: #e3e3e3;
+	border-radius: 10px;
+	box-shadow: 0px 2px 6px 3px #aaaaaa;
+}
+
+.title{
+	display: flex;
+	align-items: center;
+	padding: 20px 5px;
+	background: linear-gradient(to top, #9acb9d 0%, #7fbe83 25%, #7fbe83 50%, #a7d2aa 50%, #deeedf 75%);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.logo{
+	padding: 10px;
+}
+
+h1{
+	font-size: 20px;
+	letter-spacing: -1px;
+	font-weight: 500;
+}
+
+.data{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-image: url(../image/fon.jpg);
+	background-size: cover;
+}
+
+.type{
+	border-radius: 4px;
+	font-size: 17px;
+	padding: 5px;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+}
+
+.change{
+display: flex;
+flex-direction: column;
+}
+
+.changeLine, .findLine{
+display: flex;
+justify-content: space-between;
+height: 90px;
+padding: 20px 0;
+font-size: 17px;
+}
+
+input{
+	text-align: end;
+}
+
+.result{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.resultBtn{
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	background-color: #e0001a;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	box-shadow: 0px 2px 6px 3px #aaaaaa;
+}
+
+.resultSelect{
+	width: 50px;
+	height: 50px;
+	background-image: url(../image/row.png);
+	background-size: cover;
+	border: 2px solid #828282;
+	border-radius: 5px;
+}
+
+h3{
+	font-size: 22px;
+	font-weight: 500;
+}
+
+input, select{
+	border: 2px solid #828282;
+	border-radius: 5px;
+	box-shadow: 0px 2px 6px 3px #aaaaaa;
+}
